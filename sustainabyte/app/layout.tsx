@@ -137,38 +137,20 @@ export const metadata: Metadata = {
     images: ["/opengraph-image.png"],
   },
   alternates: {
+    // Single canonical — all country traffic handled by geo-targeting in GBP & GSC
+    // Having 20+ hreflang variants pointing to the same URL causes critical hreflang errors
     canonical: "https://sustainabyte.ai",
     languages: {
       "en": "https://sustainabyte.ai",
       "en-IN": "https://sustainabyte.ai",
-      "en-AE": "https://sustainabyte.ai",
-      "en-SA": "https://sustainabyte.ai",
-      "en-SG": "https://sustainabyte.ai",
-      "en-MY": "https://sustainabyte.ai",
-      "en-QA": "https://sustainabyte.ai",
-      "en-BH": "https://sustainabyte.ai",
-      "en-KW": "https://sustainabyte.ai",
-      "en-OM": "https://sustainabyte.ai",
-      "en-ID": "https://sustainabyte.ai",
-      "en-PH": "https://sustainabyte.ai",
-      "en-TH": "https://sustainabyte.ai",
-      "en-VN": "https://sustainabyte.ai",
-      "en-GB": "https://sustainabyte.ai",
-      "en-US": "https://sustainabyte.ai",
-      "en-AU": "https://sustainabyte.ai",
-      "en-CA": "https://sustainabyte.ai",
-      "en-DE": "https://sustainabyte.ai",
-      "en-FR": "https://sustainabyte.ai",
-      "en-JP": "https://sustainabyte.ai",
-      "en-KR": "https://sustainabyte.ai",
+      "x-default": "https://sustainabyte.ai",
     },
   },
   icons: {
     icon: "/icon.png?v=1",
   },
-  verification: {
-    google: "google-site-verification-code-here",
-  }
+  // Google verification is done via DNS TXT record (already verified in Search Console)
+  // Do NOT add placeholder verification strings — they create broken meta tags
 };
 
 export default function RootLayout({
@@ -189,30 +171,11 @@ export default function RootLayout({
         {/* Preload logo to prevent it being a late-discovered LCP resource */}
         <link rel="preload" as="image" href="/Company-Logo-3-1.webp" fetchPriority="high" />
 
-        {/* Global Geo Meta Tags */}
-        <meta name="geo.region" content="IN" />
-        <meta name="geo.region" content="AE" />
-        <meta name="geo.region" content="SA" />
-        <meta name="geo.region" content="SG" />
-        <meta name="geo.region" content="MY" />
-        <meta name="geo.region" content="QA" />
-        <meta name="geo.region" content="BH" />
-        <meta name="geo.region" content="KW" />
-        <meta name="geo.region" content="OM" />
-        <meta name="geo.region" content="ID" />
-        <meta name="geo.region" content="PH" />
-        <meta name="geo.region" content="TH" />
-        <meta name="geo.region" content="VN" />
-        <meta name="geo.region" content="GB" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.region" content="AU" />
-        <meta name="geo.region" content="CA" />
-        <meta name="geo.region" content="DE" />
-        <meta name="geo.region" content="FR" />
-        <meta name="geo.region" content="JP" />
-        <meta name="geo.region" content="KR" />
-        <meta name="geo.placename" content="India, United Arab Emirates, Saudi Arabia, Singapore, Malaysia, Qatar, Bahrain, Kuwait, Oman, Indonesia, Philippines, Thailand, Vietnam, United Kingdom, United States, Australia, Canada, Germany, France, Japan, South Korea" />
-        <meta name="ICBM" content="20.5937, 78.9629" />
+        {/* Global Geo Meta Tags — only primary region; multiple geo.region tags are invalid HTML */}
+        <meta name="geo.region" content="IN-TN" />
+        <meta name="geo.placename" content="Chennai, Tamil Nadu, India" />
+        <meta name="geo.position" content="12.9249;80.1000" />
+        <meta name="ICBM" content="12.9249, 80.1000" />
         {/* Author / Publisher Attribution */}
         <meta name="author" content="Sustainabyte Technologies" />
         <meta name="publisher" content="Sustainabyte Technologies" />
@@ -261,3 +224,4 @@ export default function RootLayout({
     </html>
   );
 }
+ 

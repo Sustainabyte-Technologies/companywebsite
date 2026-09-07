@@ -5,15 +5,8 @@ import { CheckCircle2, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import GreenButton from "@/components/ui/GreenButton";
-import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export default function EnergyManagementSolutionsPage() {
-  const breadcrumbItems = [
-    { name: "Home", url: "/" },
-    { name: "Energy", url: "/energy" },
-    { name: "Management Solutions", url: "/energy/management-solutions" },
-  ];
-
   return (
     <div className="bg-[#0D1B3E] min-h-screen text-white overflow-x-hidden">
       {/* Premium Hero Section */}
@@ -41,13 +34,6 @@ export default function EnergyManagementSolutionsPage() {
               Energy Management<br />Solutions
             </h1>
           </motion.div>
-        </div>
-      </section>
-
-      {/* Breadcrumb Navigation */}
-      <section className="relative z-10 -mt-6 mb-8">
-        <div className="max-w-7xl mx-auto px-6">
-          <Breadcrumb items={breadcrumbItems} />
         </div>
       </section>
 
@@ -196,7 +182,7 @@ export default function EnergyManagementSolutionsPage() {
               {
                 title: "Energy Efficiency and Consulting",
                 desc: "End-to-end optimization through specialized audits, diagnostics, and compliance reporting.",
-                href: "/energy/efficiency-consulting",
+                href: "/energy",
                 img: "/energy/Energy Efficiency and Consulting/energybg.webp",
                 label: "Optimization & Consulting"
               },

@@ -635,7 +635,7 @@ export default function EnergyAuditChennaiPage() {
               {[
                 { label: "Energy Audit Services", href: "/energy/energy-audit" },
                 { label: "Energy Management Solutions", href: "/energy/management-solutions" },
-                { label: "Energy Efficiency Consulting", href: "/energy/efficiency-consulting" },
+                { label: "Energy Efficiency Consulting", href: "/energy" },
                 { label: "Technology Products", href: "/technology" },
                 { label: "Contact Us", href: "/contact" },
               ].map((link) => (

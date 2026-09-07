@@ -64,7 +64,7 @@ export default function IntroSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* Left Text Block */}
           <div className="lg:col-span-7">
             <motion.div
@@ -74,26 +74,7 @@ export default function IntroSection() {
               transition={{ duration: 0.5 }}
               className="mb-6 sm:mb-8"
             >
-              <motion.span
-                animate={{ y: [-4, 4] }}
-                transition={{
-                  duration: 2.5,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  ease: "easeInOut"
-                }}
-                className="relative inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium bg-[#0A1128] text-[#00FFAA] border border-[#00FFAA] group overflow-visible"
-                style={{
-                  boxShadow: "0 0 20px rgba(0,255,170,0.3), 0 0 40px rgba(0,255,170,0.1), inset 0 0 10px rgba(0,255,170,0.2)"
-                }}
-              >
-                {/* Glowing dot */}
-                <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FFAA] opacity-100"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-[#00FFAA] shadow-[0_0_10px_#00FFAA]"></span>
-                </span>
-                AI-Powered Energy Intelligence
-              </motion.span>
+
             </motion.div>
 
             <motion.h1

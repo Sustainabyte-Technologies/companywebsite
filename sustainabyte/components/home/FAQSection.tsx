@@ -86,8 +86,6 @@ const allFaqs = [
   },
 ];
 
-const categories = ["All", "People Also Ask", "AI & Energy", "Chiller & HVAC", "ESG & Audits"];
-
 const faqSchema = faqPageSchema(
   allFaqs.map((faq) => ({
     question: faq.q,
@@ -96,13 +94,7 @@ const faqSchema = faqPageSchema(
 );
 
 export default function FAQSection() {
-  const [activeCategory, setActiveCategory] = useState("All");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-  const filteredFaqs =
-    activeCategory === "All"
-      ? allFaqs
-      : allFaqs.filter((faq) => faq.category === activeCategory);
 
   return (
     <>
@@ -115,7 +107,7 @@ export default function FAQSection() {
 
       <section className="py-16 sm:py-24 bg-white" id="faq">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
+          <div className="text-center mb-12">
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -134,28 +126,8 @@ export default function FAQSection() {
             </motion.h2>
           </div>
 
-          {/* Category Filter Pills */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => {
-                  setActiveCategory(category);
-                  setOpenIndex(null);
-                }}
-                className={`px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all cursor-pointer ${
-                  activeCategory === category
-                    ? "bg-[#0D1B3E] text-white shadow-md shadow-[#0D1B3E]/10"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                }`}
-              >
-                {category === "People Also Ask" ? "✨ People Also Ask" : category}
-              </button>
-            ))}
-          </div>
-
           <div className="space-y-0 divide-y divide-gray-100 border-t border-b border-gray-100">
-            {filteredFaqs.map((faq, i) => (
+            {allFaqs.map((faq, i) => (
               <motion.div
                 key={`${faq.q}-${i}`}
                 initial={{ opacity: 0, y: 10 }}
@@ -169,11 +141,7 @@ export default function FAQSection() {
                   className="w-full flex items-center justify-between py-4 text-left group cursor-pointer"
                 >
                   <div className="flex items-center gap-2 pr-4 flex-1">
-                    {faq.isGooglePAA && (
-                      <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 shrink-0">
-                        Google PAA
-                      </span>
-                    )}
+
                     <span className="font-[family-name:var(--font-sora)] font-semibold text-[#0D1B3E] text-sm md:text-base group-hover:text-[#3DD68C] transition-colors">
                       {faq.q}
                     </span>

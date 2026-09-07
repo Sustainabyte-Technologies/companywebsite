@@ -9,7 +9,6 @@ Sustainabyte Technologies Private Limited is a climate-tech company headquartere
 - [Energy Audit Services in Chennai](https://sustainabyte.ai/energy/energy-audit-chennai): BEE certified industrial and commercial energy audits in Chennai. Factory, hospital, hotel, IT park, HVAC, electrical and chiller plant audits.
 - [Energy Audit Services](https://sustainabyte.ai/energy/energy-audit): ASHRAE Level 1-3, ISO 50002, BEE compliant energy audits across India, UAE, Saudi Arabia, Singapore and 20+ countries.
 - [Energy Management Solutions](https://sustainabyte.ai/energy/management-solutions): ISO 50001 Energy Management System implementation and consulting.
-- [Energy Efficiency Consulting](https://sustainabyte.ai/energy/efficiency-consulting): Expert energy efficiency consulting and optimization for industrial operations.
 - [Energy Solutions Overview](https://sustainabyte.ai/energy): Comprehensive energy management, efficiency consulting, and analytics solutions.
 
 ## Technology Products
@@ -34,7 +33,6 @@ Sustainabyte Technologies Private Limited is a climate-tech company headquartere
 ## Company & Careers
 
 - [About Sustainabyte](https://sustainabyte.ai/company): Mission, vision, founder, team, and company culture of Sustainabyte Technologies.
-- [Our Team](https://sustainabyte.ai/people): Engineers, leadership, and sustainability innovators at Sustainabyte.
 - [Careers & Jobs](https://sustainabyte.ai/careers): Open roles in software engineering, energy engineering, DevOps, and internships at Sustainabyte in Chennai.
 - [Contact](https://sustainabyte.ai/contact): Reach Sustainabyte Technologies in Chennai for product demos, energy audits, and inquiries.
 

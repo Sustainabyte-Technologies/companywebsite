@@ -14,6 +14,7 @@ export const generateSchema = (schema: SchemaProps) => {
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://sustainabyte.ai/#organization",
   name: "Sustainabyte Technologies",
   legalName: "Sustainabyte Technologies Private Limited",
   url: "https://sustainabyte.ai",
@@ -30,13 +31,16 @@ export const organizationSchema = {
   sameAs: [
     "https://www.linkedin.com/company/sustainabyte-ai/",
     "https://www.youtube.com/@SustainabyteTechnologies",
+    "https://www.instagram.com/sustainabyte.ai",
+    "https://www.facebook.com/sustainabyte",
+    "https://x.com/sustainabyte",
   ],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Tambaram",
+    streetAddress: "House No. 11, Prashanthi Colony, Plot 1, Madambakkam",
     addressLocality: "Chennai",
     addressRegion: "Tamil Nadu",
-    postalCode: "600045",
+    postalCode: "600126",
     addressCountry: "IN",
   },
   contactPoint: {
@@ -188,7 +192,7 @@ export const siteNavigationSchema = {
       "@type": "SiteNavigationElement",
       name: "Energy Efficiency Consulting",
       description: "Expert energy efficiency consulting and optimisation for industrial operations.",
-      url: "https://sustainabyte.ai/energy/efficiency-consulting",
+      url: "https://sustainabyte.ai/energy",
     },
     {
       "@type": "SiteNavigationElement",
@@ -272,15 +276,16 @@ export const serviceSchema = (
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Sustainabyte Technologies",
+  "@id": "https://sustainabyte.ai/#localbusiness",
+  name: "Sustainabyte Technologies Private Limited",
   image: "https://sustainabyte.ai/icon.png",
-  description: "AI-powered industrial energy intelligence, IoT monitoring, and net-zero sustainability solutions provider.",
+  description: "AI-powered industrial energy intelligence, IoT monitoring, and net-zero sustainability solutions provider based in Chennai, Tamil Nadu.",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Tambaram",
+    streetAddress: "House No. 11, Prashanthi Colony, Plot 1, Madambakkam",
     addressLocality: "Chennai",
     addressRegion: "Tamil Nadu",
-    postalCode: "600045",
+    postalCode: "600126",
     addressCountry: "IN",
   },
   geo: {
@@ -297,12 +302,15 @@ export const localBusinessSchema = {
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    opens: "09:00",
-    closes: "18:00",
+    opens: "09:30",
+    closes: "18:30",
   },
   sameAs: [
     "https://www.linkedin.com/company/sustainabyte-ai/",
     "https://www.youtube.com/@SustainabyteTechnologies",
+    "https://www.instagram.com/sustainabyte.ai",
+    "https://www.facebook.com/sustainabyte",
+    "https://x.com/sustainabyte",
   ],
 };
 
