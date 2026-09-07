@@ -21,6 +21,21 @@ const nextConfig: NextConfig = {
     "www.sustainabyte.ai",
   ],
 
+  async redirects() {
+    return [
+      {
+        source: "/people",
+        destination: "/company",
+        permanent: true,
+      },
+      {
+        source: "/energy/efficiency-consulting",
+        destination: "/energy",
+        permanent: true,
+      },
+    ];
+  },
+
   // Security and SEO headers
   async headers() {
     return [

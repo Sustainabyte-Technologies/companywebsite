@@ -31,11 +31,10 @@ const siteIndex: SearchResult[] = [
   { title: "Regions", href: "/regions", category: "Page", description: "We operate across India and the GCC", type: "page" },
   { title: "Careers", href: "/careers", category: "Company", description: "Join Sustainabyte Technologies", type: "company" },
   { title: "About Us", href: "/company", category: "Company", description: "Our story, mission and values", type: "company" },
-  { title: "People", href: "/people", category: "Company", description: "Meet the team behind Sustainabyte", type: "company" },
   { title: "Clients", href: "/company#clients", category: "Company", description: "Trusted by leading enterprises", type: "company" },
   { title: "Blogs", href: "/blogs", category: "Resources", description: "Sustainability insights and expert articles", type: "blog" },
   { title: "News", href: "/news", category: "Resources", description: "Latest news from Sustainabyte", type: "blog" },
-  { title: "Energy Efficiency & Consulting", href: "/energy/efficiency-consulting", category: "Services", description: "ASHRAE audits, chiller and boiler performance, compressed air", type: "service" },
+  { title: "Energy Efficiency & Consulting", href: "/energy", category: "Services", description: "ASHRAE audits, chiller and boiler performance, compressed air", type: "service" },
   { title: "Equip-Ops Analytics", href: "/energy#equip-ops", category: "Services", description: "Equipment-level operational analytics", type: "service" },
   { title: "Compressed Air Leakage Audits", href: "/energy#compressed-air", category: "Services", description: "Identify and fix costly compressed air leaks", type: "service" },
   { title: "Chiller Reliability & Performance Audits", href: "/energy#chiller", category: "Services", description: "Maximize chiller uptime and efficiency", type: "service" },
@@ -112,7 +111,7 @@ const typeColor: Record<SearchResult["type"], string> = {
 const quickLinks: SearchResult[] = [
   { title: "OptiByte - AIoT Energy Platform", href: "/technology/optibyte", category: "Technology", description: "Real-time energy monitoring powered by AI and IoT", type: "technology" },
   { title: "Carbon Accounting", href: "/sustainability/carbon-accounting", category: "Sustainability", description: "GHG Protocol, ISO 14064, and CDP reporting", type: "sustainability" },
-  { title: "Energy Efficiency & Consulting", href: "/energy/efficiency-consulting", category: "Services", description: "ASHRAE audits, chiller and boiler performance, compressed air", type: "service" },
+  { title: "Energy Efficiency & Consulting", href: "/energy", category: "Services", description: "ASHRAE audits, chiller and boiler performance, compressed air", type: "service" },
   { title: "Blogs", href: "/blogs", category: "Resources", description: "Sustainability insights and expert articles", type: "blog" },
   { title: "Contact Us", href: "/contact", category: "Page", description: "Get in touch with our expert team", type: "page" },
 ];

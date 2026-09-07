@@ -23,8 +23,6 @@ const pillars = [
       "AI-powered platform providing real-time visibility, predictive analytics, and automated controls to reduce facility energy consumption.",
     href: "/technology/optibyte",
     icon: Cpu,
-    color: "from-emerald-500 to-teal-400",
-    glowColor: "rgba(16,185,129,0.12)",
   },
   {
     title: "CPM/CPO",
@@ -33,8 +31,6 @@ const pillars = [
       "Advanced chiller plant manager and automation solutions to optimize COP, manage compressor loads, and maximize cooling efficiency.",
     href: "/technology/chiller-plant-manager",
     icon: Zap,
-    color: "from-blue-500 to-cyan-400",
-    glowColor: "rgba(59,130,246,0.12)",
   },
   {
     title: "Energy Audit & ISO 50001",
@@ -43,8 +39,6 @@ const pillars = [
       "Comprehensive ASHRAE audits, electrical safety checks, and step-by-step guidance for ISO 50001/50002 implementation and savings tracking.",
     href: "/energy",
     icon: TrendingUp,
-    color: "from-amber-500 to-orange-400",
-    glowColor: "rgba(245,158,11,0.12)",
   },
   {
     title: "InByte",
@@ -53,8 +47,6 @@ const pillars = [
       "Streamlined GHG Protocol, ISO 14064, and CDP-compliant reporting to track Scope 1, 2, and 3 emissions for corporate sustainability disclosure.",
     href: "/technology/inbyte",
     icon: Leaf,
-    color: "from-lime-500 to-emerald-400",
-    glowColor: "rgba(132,204,22,0.12)",
   },
   {
     title: "FixiByte",
@@ -63,8 +55,6 @@ const pillars = [
       "Mobile-first CMMS designed to digitize maintenance schedules, track equipment health, manage work orders, and minimize operational downtime.",
     href: "/technology/fixbyte",
     icon: Settings,
-    color: "from-rose-500 to-pink-400",
-    glowColor: "rgba(244,63,94,0.12)",
   },
   {
     title: "FusionByte",
@@ -73,8 +63,6 @@ const pillars = [
       "Wireless precision for welding operations. Retrofit existing machines to manage voltage and current via mobile app, eliminating manual knobs.",
     href: "/technology/fusionbyte",
     icon: Bluetooth,
-    color: "from-blue-500 to-indigo-400",
-    glowColor: "rgba(59,130,246,0.12)",
   },
   {
     title: "DigiWeld",
@@ -83,8 +71,6 @@ const pillars = [
       "Track and improve welding quality. Digitize weld log sheets, track joints and operator IDs, and manage non-conformance reports for full production visibility.",
     href: "/technology/digiweld",
     icon: FileDigit,
-    color: "from-cyan-500 to-emerald-400",
-    glowColor: "rgba(6,182,212,0.12)",
   },
 ];
 
@@ -105,39 +91,36 @@ function PillarCard({ pillar, index }: { pillar: typeof pillars[number]; index: 
     >
       <Link
         href={pillar.href}
-        className="relative rounded-[2rem] border bg-[#0F1C3F]/40 backdrop-blur-md p-8 flex flex-col justify-between flex-1 group transition-all duration-300"
+        className="relative rounded-[2rem] border bg-white p-8 flex flex-col justify-between flex-1 group transition-all duration-300"
         style={{
-          boxShadow: hovered ? `0 25px 50px ${pillar.glowColor}` : '0 10px 30px rgba(0,0,0,0.15)',
-          borderColor: hovered ? 'rgba(61,214,140,0.3)' : 'rgba(255,255,255,0.06)'
+          boxShadow: hovered ? '0 20px 40px -10px rgba(0,0,0,0.18)' : '0 10px 30px -5px rgba(0,0,0,0.08)',
+          borderColor: hovered ? 'rgba(39,163,123,0.4)' : 'rgba(255,255,255,0.9)'
         }}
       >
-        {/* Top colored accent line */}
-        <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${pillar.color} opacity-70 group-hover:opacity-100 transition-opacity rounded-t-[2rem]`} />
-
         <div>
           {/* Icon & Title */}
-          <div className="flex items-center gap-4 mb-6">
-            <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${pillar.color} flex items-center justify-center text-[#0D1B3E] font-bold shadow-lg`}>
-              <Icon className="w-6 h-6" />
+          <div className="flex items-center gap-3.5 mb-5">
+            <div className="w-11 h-11 rounded-xl bg-gray-100 flex items-center justify-center text-[#0D1B3E] flex-shrink-0">
+              <Icon className="w-5 h-5" />
             </div>
-            <h3 className="font-[family-name:var(--font-sora)] text-2xl font-bold text-white group-hover:text-[#3DD68C] transition-colors duration-300">
+            <h3 className="font-[family-name:var(--font-sora)] text-2xl font-bold text-[#0D1B3E] group-hover:text-[#27A37B] transition-colors duration-300">
               {pillar.title}
             </h3>
           </div>
 
           {/* Subtitle */}
-          <h4 className="text-[#3DD68C] text-xs font-bold uppercase tracking-wider mb-3">
+          <h4 className="text-[#27A37B] text-xs font-bold uppercase tracking-wider mb-4">
             {pillar.subtitle}
           </h4>
 
           {/* Description */}
-          <p className="text-[#B0BEC5] text-sm leading-relaxed mb-6 font-[family-name:var(--font-dm-sans)]">
+          <p className="text-gray-600 text-sm leading-relaxed mb-6 font-[family-name:var(--font-dm-sans)]">
             {pillar.description}
           </p>
         </div>
 
         {/* Learn More link */}
-        <div className="flex items-center gap-2 text-sm font-bold text-[#3DD68C] mt-auto">
+        <div className="flex items-center gap-2 text-sm font-bold text-[#27A37B] group-hover:text-[#1e8261] mt-auto">
           <span>Learn More</span>
           <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
         </div>

@@ -66,11 +66,7 @@ export default function BlogsPage() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#4DB846]/20 border border-[#4DB846]/40 text-[#4DB846] text-xs font-semibold uppercase tracking-wider mb-6">
-              <BookOpen className="w-3.5 h-3.5" />
-              Sustainabyte Thought Leadership
-            </div>
-
+    
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 text-white drop-shadow-md">
               Sustainability Insights for Built
               <br />

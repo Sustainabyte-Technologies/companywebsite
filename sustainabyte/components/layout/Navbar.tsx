@@ -185,7 +185,7 @@ const navLinks: NavLink[] = [
     href: "/company",
     megaMenu: {
       title: "Company",
-      gridCols: 4,
+      gridCols: 3,
       columns: [
         {
           title: "About Us",
@@ -200,11 +200,6 @@ const navLinks: NavLink[] = [
         {
           title: "Careers",
           href: "/careers",
-          items: []
-        },
-        {
-          title: "People",
-          href: "/people",
           items: []
         }
       ]
@@ -482,8 +477,8 @@ export default function Navbar() {
                           )
                         }
                         className={`w-full flex items-center justify-between py-2.5 text-lg font-semibold transition-colors duration-200 ${isNavActive(link) || expandedMobileMenu === link.name
-                            ? "text-[#3DD68C]"
-                            : "text-white/80 hover:text-[#3DD68C]"
+                          ? "text-[#3DD68C]"
+                          : "text-white/80 hover:text-[#3DD68C]"
                           }`}
                       >
                         <span className={isNavActive(link) ? "text-[#3DD68C]" : ""}>{link.name}</span>
@@ -542,8 +537,8 @@ export default function Navbar() {
                                             <Link
                                               href={item.href}
                                               className={`block text-xs py-1 transition-colors ${pathname === item.href.split("#")[0]
-                                                  ? "text-[#3DD68C] font-semibold"
-                                                  : "text-white/60 hover:text-white"
+                                                ? "text-[#3DD68C] font-semibold"
+                                                : "text-white/60 hover:text-white"
                                                 }`}
                                               onClick={() => setMobileOpen(false)}
                                             >
@@ -563,8 +558,8 @@ export default function Navbar() {
                                       <Link
                                         href={sub.href}
                                         className={`block text-xs py-1 transition-colors ${pathname === sub.href.split("#")[0]
-                                            ? "text-[#3DD68C] font-semibold"
-                                            : "text-white/60 hover:text-white"
+                                          ? "text-[#3DD68C] font-semibold"
+                                          : "text-white/60 hover:text-white"
                                           }`}
                                         onClick={() => setMobileOpen(false)}
                                       >
