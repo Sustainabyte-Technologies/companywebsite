@@ -46,50 +46,201 @@ const whyJoinUs = [
 const jobs = [
   {
     title: "Frontend Developer",
-    experience: "1–3 Years",
+    subtitle: "Next.js / React.js / TypeScript",
+    experience: "1+ Years (Freshers with strong projects welcome)",
     type: "Full Time",
     location: "Chennai (Tambaram) / On-site",
-    about: "We are looking for a talented and detail-oriented Frontend Developer to build high-performance, visually stunning web interfaces. You will work closely with our design and backend teams to deliver seamless user experiences for our industrial and sustainability products.",
-    requiredSkills: ["React.js & Next.js", "TypeScript", "Tailwind CSS / Vanilla CSS", "REST API integration", "State management (Redux / Zustand)", "Git & GitHub", "Cross-browser & responsive design"],
-    preferredSkills: ["Framer Motion / animation libraries", "WebSockets / real-time data", "Testing (Jest, Cypress)", "Figma-to-code workflow"],
-    responsibilities: [
-      "Build and maintain responsive, high-performance web UIs using React and Next.js",
-      "Translate Figma designs into pixel-perfect, accessible components",
-      "Collaborate with backend engineers to integrate REST APIs and real-time data feeds",
-      "Optimize application performance and page load times",
-      "Participate in code reviews and contribute to frontend architecture decisions",
-      "Write clean, maintainable, well-documented code",
+    about: "We are looking for a Frontend Developer responsible for developing, maintaining, debugging, and enhancing modern web applications using Next.js, React.js, and TypeScript. The developer will build reusable frontend modules, integrate REST APIs, implement state management, and work closely with backend, QA, UI/UX, and product teams.",
+    mandatoryStack: "React.js + Next.js + TypeScript + JavaScript ES6+ + HTML5 + CSS3 + REST API Integration + State Management + Git/GitHub",
+    requiredSkills: [
+      "React.js & Next.js (App Router, Server & Client Components, SSR/SSG)",
+      "TypeScript & Modern JavaScript (ES6+)",
+      "HTML5, CSS3 & Responsive Web Design across all devices",
+      "REST API Integration & Handling (loading, success, empty, and error states)",
+      "State Management (Zustand, Redux Toolkit, React Context, or TanStack Query)",
+      "Component-based architecture & reusable UI module development",
+      "Git / GitHub version control, branching, PRs, and code reviews",
+      "Debugging & performance optimization using Browser DevTools",
     ],
-    gains: ["Work on real-time industrial dashboards", "Exposure to AI-powered UI features", "Strong engineering culture", "Fast growth in a startup environment"],
+    preferredSkills: [
+      "Tailwind CSS / Material UI / Ant Design / Shadcn UI",
+      "2D & 3D Visualization (Three.js, React Three Fiber, SVG / Canvas, draw.io)",
+      "WebSockets / SignalR & MQTT real-time streaming protocols",
+      "Docker, Azure / AWS cloud environments & CI/CD pipelines",
+      "Automated Testing (Jest, React Testing Library, Playwright / Cypress)",
+      "Data visualization (D3.js, Chart.js / ECharts)",
+      "Basic understanding of ASP.NET Core and PostgreSQL",
+    ],
+    responsibilities: [
+      "Develop and maintain scalable web applications using Next.js, React.js, and TypeScript",
+      "Design and build reusable modules: dashboards, data tables, forms, filters, search, pagination, charts, modals, and configuration panels",
+      "Integrate frontend applications with REST APIs and ensure robust error and state handling",
+      "Implement appropriate state management for local UI state, global application state, and server/API state",
+      "Build responsive, pixel-perfect, and user-friendly interfaces for desktop, tablet, and mobile",
+      "Debug existing frontend modules and resolve functional, UI, integration, and production issues",
+      "Investigate frontend performance bottlenecks, unnecessary re-renders, and bundle size optimizations",
+      "Participate in code reviews, follow clean coding standards, and write unit/integration tests",
+      "Collaborate with backend developers, QA, UI/UX, and product teams to deliver features",
+    ],
+    gains: [
+      "Work on real-time industrial dashboards & IoT visualization",
+      "Exposure to 2D/3D digital twin visualization (Three.js, Canvas)",
+      "Strong engineering culture with Next.js App Router & TypeScript",
+      "Fast-track growth in an agile climate-tech startup environment",
+    ],
   },
 
   {
     title: "Full Stack Developer",
-    experience: "1–3 Years",
+    subtitle: ".NET / React.js / Next.js",
+    experience: "2+ Years",
     type: "Full Time",
     location: "Chennai (Tambaram) / On-site",
-    about: "We are looking for a versatile Full Stack Developer who can own features end-to-end — from database design to pixel-perfect UI. You will work on our industrial SaaS and energy management platforms, building features that impact real-world sustainability outcomes.",
-    requiredSkills: ["React.js / Next.js", "Node.js and/or Python", "SQL (PostgreSQL / SQL Server)", "REST API design & integration", "TypeScript", "Git & GitHub", "Basic DevOps / deployment knowledge"],
-    preferredSkills: [".NET / ASP.NET Core", "MongoDB / InfluxDB", "Docker", "AWS / Azure", "MQTT / WebSockets", "Tailwind CSS"],
-    responsibilities: [
-      "Develop and own full-stack features from database to UI",
-      "Build REST APIs and integrate them with React/Next.js frontends",
-      "Design efficient database schemas and write optimized queries",
-      "Collaborate with product, design, and DevOps teams",
-      "Debug and resolve issues across the stack",
-      "Participate in agile sprints, code reviews, and architecture discussions",
+    about: "We are looking for a Full Stack Developer (.NET / React.js / Next.js) responsible for developing and maintaining scalable web applications. You will design REST APIs using .NET Web API, build modern UIs with React/Next.js, optimize PostgreSQL database schemas, and integrate real-time IoT feeds for industrial sustainability.",
+    mandatoryStack: "C# + ASP.NET Core + PostgreSQL + React.js / Next.js",
+    requiredSkills: [
+      "C# / .NET / ASP.NET Core Web API",
+      "React.js / Next.js & TypeScript / JavaScript",
+      "PostgreSQL Database Design, Complex Queries & Query Optimization",
+      "Entity Framework Core & LINQ",
+      "RESTful API Design, Development & Integration",
+      "HTML5, CSS3 & Responsive UI Components",
+      "Git / GitHub Version Control",
+      "OOP, SOLID Principles & Software Design Patterns",
     ],
-    gains: ["End-to-end product ownership", "Exposure to industrial & SaaS products", "Full-stack architecture experience", "High-impact startup environment"],
+    preferredSkills: [
+      "Docker & Containerization",
+      "Azure / AWS Cloud Deployments",
+      "CI/CD Pipelines (GitHub Actions / Jenkins)",
+      "Redis In-Memory Caching & Microservices Architecture",
+      "MQTT / IoT Protocols & WebSockets",
+      "Python Scripting & Automation",
+    ],
+    responsibilities: [
+      "Develop and maintain scalable web applications using ASP.NET Core and React.js / Next.js",
+      "Design and develop high-performance REST APIs using .NET Web API",
+      "Design database schemas, write complex queries, and optimize database performance using PostgreSQL",
+      "Build responsive and reusable UI components using React.js / Next.js",
+      "Integrate frontend applications with backend APIs and handle authentication, authorization, validation, and error states",
+      "Debug and resolve application, database, and production issues across the stack",
+      "Participate in code reviews and adhere to clean coding, OOP, and architectural best practices",
+      "Collaborate with frontend, backend, QA, and product teams to deliver end-to-end features",
+    ],
+    gains: [
+      "End-to-end product ownership on industrial IoT and SaaS platforms",
+      "Enterprise-grade .NET Core and Next.js full-stack architecture expertise",
+      "Hands-on exposure to high-frequency time-series data & MQTT feeds",
+      "High-impact startup environment driving real-world decarbonization",
+    ],
+  },
+
+  {
+    title: "AI/ML Engineer – Building Energy Intelligence",
+    subtitle: "Machine Learning / GenAI / Agentic AI",
+    experience: "2+ Years (or strong demonstrable project capabilities)",
+    qualification: "B.E. / B.Tech / M.E. / M.Tech in CS, AI/ML, Data Science, Electrical, Mechanical, Energy Engineering",
+    type: "Full Time",
+    location: "Chennai (Tambaram) / Hybrid",
+    about: "Sustainabyte is looking for an AI/ML Engineer to develop intelligent solutions for energy-efficient and cognitive buildings. The role combines Machine Learning, Data Analytics, Generative AI, Agentic AI, and Building Energy Systems. You will work with real-world building sensor data and develop AI-driven solutions for prediction, anomaly detection, optimization, insights, recommendations, and intelligent supervisory controls.",
+    requiredSkills: [
+      "Python (Pandas, NumPy, Scikit-learn)",
+      "Machine Learning fundamentals, model development & time-series forecasting",
+      "Data analysis, preprocessing, feature engineering & anomaly detection",
+      "SQL and relational databases (PostgreSQL / MySQL)",
+      "FastAPI / REST API development & integration",
+      "Git / GitHub and clean software development practices",
+      "Understanding of HVAC, electrical systems, BMS/EMS, or building energy systems",
+    ],
+    preferredSkills: [
+      "LLMs & Generative AI, Prompt Engineering, RAG & Vector Databases",
+      "Agentic AI, LangChain / LangGraph, Tool / Function Calling & MCP (Model Context Protocol)",
+      "Multi-agent systems & autonomous decision workflows",
+      "AWS / Azure / GCP Cloud Platforms & Docker containerization",
+      "MLOps, CI/CD, model deployment, monitoring & evaluation",
+      "HVAC domain concepts: Chillers, AHUs, pumps, cooling towers, VFDs, kW/TR, COP & building automation",
+    ],
+    responsibilities: [
+      "Develop and deploy ML models for energy forecasting, anomaly detection, prediction, and optimization",
+      "Build LLM, RAG, and Agentic AI applications for building and energy intelligence use cases",
+      "Analyse BMS/EMS, HVAC, electrical, sensor, and energy time-series data",
+      "Develop AI-driven insights, recommendations, and decision-support / supervisory control solutions",
+      "Integrate AI solutions with databases, APIs, cloud platforms, and existing software systems",
+      "Work closely with engineering and software teams to convert real-world building problems into scalable AI solutions",
+    ],
+    gains: [
+      "Pioneer cutting-edge Agentic AI and cognitive building technology",
+      "Direct impact on global decarbonization and enterprise energy optimization",
+      "Hands-on work with real-world IoT sensor telemetry and industrial plant data",
+      "Collaborate in an innovative, high-impact climate tech engineering team",
+    ],
+  },
+
+  {
+    title: "Energy Audit Engineer",
+    subtitle: "Junior Engineer – Energy Audit",
+    experience: "0–3 Years",
+    qualification: "ITI / Diploma / B.E. / B.Tech in Mechanical, Electrical, Instrumentation, or Energy Engineering",
+    type: "Full Time",
+    location: "Chennai / Field-Based (Client Sites)",
+    about: "Conduct industrial and commercial energy audits and field assessments covering electrical and mechanical utilities. Carry out measurements and data collection for equipment such as motors, pumps, compressors, chillers, HVAC, boilers, and transformers, and identify high-impact Energy Conservation Measures (ECMs).",
+    requiredSkills: [
+      "Knowledge of electrical and mechanical systems and industrial utilities",
+      "Understanding of motors, pumps, compressors, chillers, HVAC systems, boilers, transformers & distribution",
+      "Hands-on operation of audit instruments: power analyzers, clamp meters, thermal imaging cameras, ultrasonic leak detectors, flow meters",
+      "Measurement of electrical parameters: kW, kVA, kWh, power factor, voltage, current & maximum demand",
+      "MS Excel data analysis, energy calculations & technical report preparation",
+      "Good client communication, site coordination, and field reporting skills",
+      "Willingness to travel extensively to industrial customer sites across regions",
+      "Adherence to industrial electrical safety and site procedures",
+    ],
+    preferredSkills: [
+      "Knowledge of BEE / ASHRAE / ISO 50001 / IPMVP concepts and standards",
+      "Basic understanding of BMS/EMS and digital energy monitoring systems",
+      "Understanding of chiller performance (COP, kW/TR), compressor FAD, and motor loading",
+      "Compressed air system audits & ultrasonic leak detection",
+      "Basic knowledge of solar PV systems and renewable energy generation",
+    ],
+    responsibilities: [
+      "Conduct comprehensive energy audits and field assessments at industrial and commercial facilities",
+      "Carry out measurements and data collection for major utility equipment (motors, pumps, compressors, chillers, HVAC, boilers, transformers)",
+      "Perform electrical measurements including voltage, current, kW, kVA, power factor, energy consumption, and maximum demand",
+      "Assess motor loading, pump performance, compressor efficiency, and chiller operating conditions to identify optimization opportunities",
+      "Conduct power quality measurements, thermography, and electrical system safety assessments",
+      "Analyze energy consumption and operating patterns to identify Energy Conservation Measures (ECMs)",
+      "Support Measurement & Verification (M&V) by comparing pre- and post-implementation equipment performance",
+      "Prepare detailed audit reports, measurement data sheets, calculations, energy-saving estimates, and payback analysis",
+      "Ensure proper handling, calibration, and safe operation of energy audit testing instruments",
+    ],
+    gains: [
+      "Hands-on experience with industrial energy audits & electrical safety audits",
+      "Direct involvement in Energy Management System (EMS) implementation and commissioning",
+      "Mastery of industrial measuring instruments, thermal imaging, and power analyzers",
+      "Extensive exposure to large manufacturing plants and commercial facilities",
+    ],
   },
 
   {
     title: "DevOps Engineer",
+    subtitle: "Cloud & Infrastructure",
     experience: "1–2 Years",
     type: "Full Time",
     location: "Chennai (Tambaram) / On-site",
     about: "We are looking for a skilled DevOps Engineer to build and manage our cloud infrastructure, CI/CD pipelines, and deployment automation. You will ensure our platforms are highly available, scalable, and secure across AWS/Azure environments.",
-    requiredSkills: ["AWS or Azure (EC2, S3, RDS, Lambda)", "Docker & container orchestration", "CI/CD pipelines (GitHub Actions / Jenkins)", "Linux server administration", "Infrastructure as Code (Terraform / Bicep)", "Monitoring & alerting (CloudWatch, Grafana)"],
-    preferredSkills: ["Kubernetes", "Nginx / reverse proxies", "Secrets management (Vault, AWS Secrets Manager)", "Database backups & disaster recovery", "Security & compliance best practices"],
+    requiredSkills: [
+      "AWS or Azure (EC2, S3, RDS, Lambda)",
+      "Docker & container orchestration",
+      "CI/CD pipelines (GitHub Actions / Jenkins)",
+      "Linux server administration",
+      "Infrastructure as Code (Terraform / Bicep)",
+      "Monitoring & alerting (CloudWatch, Grafana)",
+    ],
+    preferredSkills: [
+      "Kubernetes",
+      "Nginx / reverse proxies",
+      "Secrets management (Vault, AWS Secrets Manager)",
+      "Database backups & disaster recovery",
+      "Security & compliance best practices",
+    ],
     responsibilities: [
       "Design, implement, and maintain CI/CD pipelines for automated deployments",
       "Manage cloud infrastructure on AWS / Azure",
@@ -98,7 +249,12 @@ const jobs = [
       "Implement security best practices and compliance controls",
       "Collaborate with developers to streamline the build-test-deploy cycle",
     ],
-    gains: ["Cloud infrastructure at scale", "Exposure to IoT + SaaS infrastructure", "Security & compliance experience", "High-ownership DevOps role"],
+    gains: [
+      "Cloud infrastructure at scale",
+      "Exposure to IoT + SaaS infrastructure",
+      "Security & compliance experience",
+      "High-ownership DevOps role",
+    ],
   },
 ];
 
@@ -429,7 +585,7 @@ export default function CareersPage() {
 
           {/* Tab Toggle */}
           <div className="flex justify-center mb-12">
-            <div className="inline-flex bg-white border border-gray-200 rounded-2xl p-1.5 shadow-sm">
+            <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-2xl p-1.5 shadow-sm">
               <button
                 onClick={() => setJobTab("fulltime")}
                 className={`px-7 py-3 rounded-xl text-sm font-bold transition-all ${
@@ -476,13 +632,19 @@ export default function CareersPage() {
                       className="w-full flex items-center justify-between p-8 text-left transition-colors focus:outline-none"
                     >
                       <div>
-                        <div className="flex items-center gap-3 mb-2 flex-wrap">
+                        <div className="flex items-center gap-3 mb-1.5 flex-wrap">
                           <h3 className="text-2xl font-bold text-[#0D1B3E]">{job.title}</h3>
                           <span className="px-3 py-0.5 rounded-full bg-[#0D1B3E]/8 text-[#0D1B3E] text-xs font-bold border border-[#0D1B3E]/15">{job.type}</span>
                         </div>
+                        {"subtitle" in job && Boolean(job.subtitle) && (
+                          <p className="text-sm text-gray-500 font-medium mb-2.5">{job.subtitle}</p>
+                        )}
                         <div className="flex flex-wrap gap-4 text-sm text-gray-500 font-medium">
                           <span className="flex items-center gap-1.5"><Briefcase className="w-4 h-4 text-[#3DD68C]" /> {job.experience}</span>
                           <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4 text-[#3DD68C]" /> {job.location}</span>
+                          {"qualification" in job && Boolean(job.qualification) && (
+                            <span className="flex items-center gap-1.5"><GraduationCap className="w-4 h-4 text-[#3DD68C]" /> {job.qualification}</span>
+                          )}
                         </div>
                       </div>
                       <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-colors ${activeJob === idx ? 'bg-[#3DD68C] text-white' : 'bg-gray-100 text-gray-400'}`}>
@@ -503,6 +665,24 @@ export default function CareersPage() {
                               <h4 className="text-sm font-bold text-[#0D1B3E] uppercase tracking-widest mb-3">About the Role</h4>
                               <p className="text-gray-600 leading-relaxed">{job.about}</p>
                             </div>
+
+                            {"mandatoryStack" in job && Boolean(job.mandatoryStack) && (
+                              <div className="p-5 rounded-2xl bg-gradient-to-r from-[#3DD68C]/10 to-[#00FFAA]/5 border border-[#3DD68C]/25">
+                                <h5 className="text-xs font-bold uppercase tracking-wider text-[#0D1B3E] mb-1.5 flex items-center gap-2">
+                                  <Code2 className="w-4 h-4 text-[#3DD68C]" /> Mandatory Tech Stack
+                                </h5>
+                                <p className="text-sm font-bold text-[#0D1B3E]">{job.mandatoryStack}</p>
+                              </div>
+                            )}
+
+                            {"qualification" in job && Boolean(job.qualification) && (
+                              <div>
+                                <h4 className="text-sm font-bold text-[#0D1B3E] uppercase tracking-widest mb-2 flex items-center gap-2">
+                                  <GraduationCap className="w-4 h-4 text-[#3DD68C]" /> Eligibility / Qualification
+                                </h4>
+                                <p className="text-gray-700 leading-relaxed font-semibold">{job.qualification}</p>
+                              </div>
+                            )}
 
                             <div className="grid md:grid-cols-2 gap-8">
                               {/* Required Skills */}
