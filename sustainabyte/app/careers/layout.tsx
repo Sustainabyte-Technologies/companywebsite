@@ -5,7 +5,7 @@ import { jobPostingSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Careers at Sustainabyte | Jobs in Chennai",
   description:
-    "Join Sustainabyte Technologies in Chennai. Open roles in Frontend Dev, Full Stack, DevOps, Energy Engineering & Digital Marketing. Internships available.",
+    "Join Sustainabyte Technologies in Chennai. Open roles in Software Engineering, AI/ML, Energy Auditing, Technical Sales, B2B SaaS Sales, Pre-Sales, AutoCAD Design, Content Strategy & Internships.",
   keywords: [
     // Brand job / career keywords
     "Sustainabyte jobs",
@@ -25,8 +25,13 @@ export const metadata: Metadata = {
     "jobs Chennai",
     "frontend developer jobs Chennai",
     "full stack developer Chennai",
-    "DevOps jobs India",
     "energy engineering jobs",
+    "sales engineer jobs Chennai",
+    "B2B SaaS sales jobs Chennai",
+    "pre sales executive Chennai",
+    "AutoCAD engineer jobs Chennai",
+    "content strategist jobs Chennai",
+    "compressed air engineer",
     "digital marketing intern Chennai",
     "sustainability jobs India",
     "software jobs Tambaram",
@@ -35,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Careers at Sustainabyte Technologies | Join Our Team",
     description:
-      "Build the future with Sustainabyte. We're hiring Frontend Devs, Full Stack, DevOps, Energy Engineers & Interns in Chennai. AI-powered sustainability startup.",
+      "Build the future with Sustainabyte. We're hiring Software Devs, AI/ML, Energy Engineers, Sales Engineers, AutoCAD Designers, Content Strategists & Interns in Chennai.",
     type: "website",
     url: "https://sustainabyte.ai/careers",
     images: [
@@ -51,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Careers at Sustainabyte Technologies",
     description:
-      "We're hiring Frontend Devs, Full Stack Engineers, DevOps & Energy Interns in Chennai. Join our AI-powered sustainability startup.",
+      "We're hiring Software Devs, AI/ML Engineers, Energy Auditing, Sales Engineers, AutoCAD Designers & Interns in Chennai. Join our AI-powered sustainability startup.",
     images: ["/opengraph-image.png"],
   },
   alternates: {
@@ -74,8 +79,50 @@ const openPositions = [
     "FULL_TIME"
   ),
   jobPostingSchema(
-    "DevOps Engineer",
-    "Build and manage cloud infrastructure, CI/CD pipelines, and deployment automation on AWS/Azure. Ensure our platforms are highly available, scalable, and secure.",
+    "AI/ML Engineer – Building Energy Intelligence",
+    "Develop intelligent machine learning, time-series forecasting, GenAI, and Agentic AI solutions for cognitive and energy-efficient smart buildings and industrial facilities.",
+    "Chennai (Tambaram), India",
+    "FULL_TIME"
+  ),
+  jobPostingSchema(
+    "Energy Audit Engineer",
+    "Conduct industrial and commercial energy audits and field assessments covering electrical and mechanical utilities. Carry out measurements on motors, pumps, compressors, chillers, and identify high-impact ECMs.",
+    "Chennai, India",
+    "FULL_TIME"
+  ),
+  jobPostingSchema(
+    "Content Strategist",
+    "Turn complex AI, IoT, Energy, and Sustainability concepts into clear, engaging content across LinkedIn, website, blogs, and marketing campaigns to build our brand and attract enterprise customers and talent.",
+    "Chennai (Tambaram), India",
+    "FULL_TIME"
+  ),
+  jobPostingSchema(
+    "AutoCAD 3D Design & Graphics Engineer",
+    "Prepare 2D and 3D technical drawings, 3D equipment models, layouts, and project presentation graphics for BMS, HVAC, electrical, and building automation projects using AutoCAD.",
+    "Chennai (Tambaram), India",
+    "FULL_TIME"
+  ),
+  jobPostingSchema(
+    "Junior Field Engineer – Compressed Air System",
+    "Conduct compressed air leak surveys using an Acoustic Imager, quantify leak rates, calculate energy losses, coordinate leak rectification, and prepare comprehensive audit reports for industrial client facilities.",
+    "Chennai, India",
+    "FULL_TIME"
+  ),
+  jobPostingSchema(
+    "B2B SaaS Sales & Business Development Executive",
+    "Support sales growth for our software and digital platforms (CMMS, ERP, EMS, IoT). Meet prospective customers, conduct product demonstrations, generate proposals, and drive deal closures.",
+    "Chennai (Tambaram), India",
+    "FULL_TIME"
+  ),
+  jobPostingSchema(
+    "Executive / Sr. Executive – Sales Engineer",
+    "Promote Sustainabyte's IoT, BMS, and Energy Management solutions. Deliver high-impact technical demonstrations, conduct site visits, map client requirements, and drive revenue growth across industries.",
+    "Chennai (Tambaram), India",
+    "FULL_TIME"
+  ),
+  jobPostingSchema(
+    "Pre-Sales Executive",
+    "Map customer requirements to Sustainabyte's AI, IoT, Energy Management, BMS/EMS, and Smart Building solutions. Prepare technical proposals, BOQ/BOM, Scope of Work, and support client demonstrations.",
     "Chennai (Tambaram), India",
     "FULL_TIME"
   ),
