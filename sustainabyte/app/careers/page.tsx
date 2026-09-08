@@ -140,7 +140,7 @@ const jobs = [
     experience: "2+ Years (or strong demonstrable project capabilities)",
     qualification: "B.E. / B.Tech / M.E. / M.Tech in CS, AI/ML, Data Science, Electrical, Mechanical, Energy Engineering",
     type: "Full Time",
-    location: "Chennai (Tambaram) / Hybrid",
+    location: "Chennai (Tambaram) /",
     about: "Sustainabyte is looking for an AI/ML Engineer to develop intelligent solutions for energy-efficient and cognitive buildings. The role combines Machine Learning, Data Analytics, Generative AI, Agentic AI, and Building Energy Systems. You will work with real-world building sensor data and develop AI-driven solutions for prediction, anomaly detection, optimization, insights, recommendations, and intelligent supervisory controls.",
     requiredSkills: [
       "Python (Pandas, NumPy, Scikit-learn)",
@@ -178,7 +178,7 @@ const jobs = [
   {
     title: "Energy Audit Engineer",
     subtitle: "Junior Engineer – Energy Audit",
-    experience: "0–3 Years",
+    experience: "3–6 Years",
     qualification: "ITI / Diploma / B.E. / B.Tech in Mechanical, Electrical, Instrumentation, or Energy Engineering",
     type: "Full Time",
     location: "Chennai / Field-Based (Client Sites)",
@@ -225,7 +225,7 @@ const jobs = [
     experience: "2–5 Years",
     qualification: "Degree in Marketing, Communications, Journalism, English, or related field",
     type: "Full Time",
-    location: "Chennai (Tambaram) / Hybrid",
+    location: "Chennai (Tambaram) /",
     about: "Sustainabyte Technologies is looking for a Content Strategist who can turn complex AI, IoT, Energy, and Sustainability concepts into clear, engaging content that builds our brand and attracts customers and talent.",
     requiredSkills: [
       "2–5 years of experience in content strategy / content marketing",
@@ -584,7 +584,7 @@ const internships = [
     title: "Energy Engineer Intern",
     icon: Zap,
     stack: "Energy Management / Sustainability",
-    location: "Chennai (Tambaram), India",
+    location: "Chennai (Tambaram),",
     duration: "3–6 Months",
     eligibility: "Pursuing / Recently Completed – Mechanical / Electrical / Energy Engineering",
     about: "A motivated and detail-oriented Energy Engineer Intern to support energy efficiency and sustainability initiatives. Assist in analyzing energy consumption, identifying savings opportunities, and supporting implementation of energy conservation measures across facilities.",
@@ -818,21 +818,19 @@ export default function CareersPage() {
             <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-2xl p-1.5 shadow-sm">
               <button
                 onClick={() => setJobTab("fulltime")}
-                className={`px-7 py-3 rounded-xl text-sm font-bold transition-all ${
-                  jobTab === "fulltime"
+                className={`px-7 py-3 rounded-xl text-sm font-bold transition-all ${jobTab === "fulltime"
                     ? "bg-[#0D1B3E] text-white shadow-md"
                     : "text-gray-500 hover:text-[#0D1B3E]"
-                }`}
+                  }`}
               >
                 Full-Time Roles ({jobs.length})
               </button>
               <button
                 onClick={() => setJobTab("internship")}
-                className={`px-7 py-3 rounded-xl text-sm font-bold transition-all flex items-center gap-2 ${
-                  jobTab === "internship"
+                className={`px-7 py-3 rounded-xl text-sm font-bold transition-all flex items-center gap-2 ${jobTab === "internship"
                     ? "bg-[#3DD68C] text-[#0D1B3E] shadow-md"
                     : "text-gray-500 hover:text-[#0D1B3E]"
-                }`}
+                  }`}
               >
                 <GraduationCap className="w-4 h-4" /> Internships ({internships.length})
               </button>
@@ -960,7 +958,7 @@ export default function CareersPage() {
                               <h4 className="text-sm font-bold text-[#0D1B3E] uppercase tracking-widest mb-3">What You&apos;ll Gain</h4>
                               <div className="flex flex-wrap gap-2">
                                 {job.gains.map((g: string, i: number) => (
-                                  <span key={i} className="px-3 py-1.5 rounded-full bg-[#3DD68C]/10 text-[#3DD68C] text-xs font-semibold border border-[#3DD68C]/20">{g}</span>
+                                  <span key={i} className="px-3 py-1.5 rounded-full bg-white text-[#0D1B3E] text-xs font-medium border border-slate-200 shadow-sm">{g}</span>
                                 ))}
                               </div>
                             </div>
@@ -1081,7 +1079,7 @@ export default function CareersPage() {
                               <h4 className="text-sm font-bold text-[#0D1B3E] uppercase tracking-widest mb-3">What You&apos;ll Gain</h4>
                               <div className="flex flex-wrap gap-2">
                                 {intern.gains.map((g, i) => (
-                                  <span key={i} className="px-3 py-1.5 rounded-full bg-[#3DD68C]/10 text-[#3DD68C] text-xs font-semibold border border-[#3DD68C]/20">{g}</span>
+                                  <span key={i} className="px-3 py-1.5 rounded-full bg-white text-[#0D1B3E] text-xs font-medium border border-slate-200 shadow-sm">{g}</span>
                                 ))}
                               </div>
                             </div>
@@ -1257,11 +1255,10 @@ export default function CareersPage() {
                   onDragOver={handleDragOver}
                   onDragLeave={handleDragLeave}
                   onDrop={handleDrop}
-                  className={`w-full border-2 border-dashed rounded-2xl p-10 text-center transition-all cursor-pointer flex flex-col items-center justify-center group ${
-                    isDragging || selectedFile
+                  className={`w-full border-2 border-dashed rounded-2xl p-10 text-center transition-all cursor-pointer flex flex-col items-center justify-center group ${isDragging || selectedFile
                       ? "border-[#3DD68C] bg-[#3DD68C]/5"
                       : "border-gray-200 bg-gray-50 hover:border-[#3DD68C] hover:bg-gray-100"
-                  }`}
+                    }`}
                 >
                   <div className={`w-14 h-14 rounded-full flex items-center justify-center mb-4 transition-colors ${selectedFile || isDragging ? 'bg-[#3DD68C] text-white' : 'bg-[#3DD68C]/10 text-[#3DD68C] group-hover:bg-[#3DD68C]/20'}`}>
                     <Upload className="w-7 h-7" />
